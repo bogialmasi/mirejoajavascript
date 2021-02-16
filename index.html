@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <script src="../../js/bootstrap.min.js"></script>
-    <link rel="icon" href="js.png" type="image/jpg" sizes="16x16">
-    <script src="script1.js"></script>
 
-    <title>Mire jó a JavaScript?</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <link rel="icon" href="js.png" type="image/jpg" sizes="16x16">
+  <script src="script1.js"></script>
+
+  <title>Mire jó a JavaScript?</title>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Linkek</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="https://bogialmasi.github.io/osszes_munka/">Összes munka</a>
-              <a class="nav-link" href="https://github.com/bogialmasi">GitHub</a>
-              <a class="nav-link" href="https://github.com/bogialmasi/java_alkfejl">Java</a>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Linkek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="https://bogialmasi.github.io/osszes_munka/">Összes munka</a>
+          <a class="nav-link" href="https://github.com/bogialmasi">GitHub</a>
+          <a class="nav-link" href="https://github.com/bogialmasi/java_alkfejl">Java</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container bg-info">
+    <h2 class="">Mire jó a JavaScript?</h2>
+    <div class="bg-light mx-auto">
+      <div class="row">
+        <div class="col-md text-center">
+          <button onclick="alert('AB 113C')">Gomb</button>
+        </div>
+        <div class="col-md text-center">
+          <button onclick="window.print()">Print this page</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md text-center">
+          <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Felkapcsol</button>
+        </div>
+        <div class="col-md text-center">
+          <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Lekapcsol</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg text-center">
+          <img id="myImage" src="pic_bulboff.gif" style="width:100px; height:auto;">
+        </div>
+        <div class="col-md text-center">
+          <div class="align-middle">
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+              Idő és Dátum</button>
+
+            <p id="demo"></p>
           </div>
         </div>
-      </nav>
-    <div class="bg-primary align-middle">
-        <h2 class="">Mire jó a JavaScript?</h2>
-<table class="egesz">
-        <tr>
-<p id="demo align-middle">JavaScript bemutatása</p>
-script
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Felkapcsol</button>
+      </div>
+    </div>
+    <p id="bg-info demo align-middle text-center">JavaScript bemutatása</p>
+  </div>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-<button class="btn btn-light" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Lekapcsol</button>
-</tr>
-</div>
-<tr>
-    <div class="bg-primary align-middle">
-        <button class="btn btn-light align-middle" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Idő és Dátum</button>
-        
-        <p id="demo align-middle"></p></div>
-    </tr></table>
+
+
+
+
+
+  </div>
+
 </body>
+
 </html>
